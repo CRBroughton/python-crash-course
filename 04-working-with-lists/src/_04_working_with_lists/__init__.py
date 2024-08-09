@@ -24,17 +24,21 @@ def sumOneMillion() -> int:
     values = [value for value in range(1, 1_000_001)]
     return sum(values)
 
+
 def oddNumbers():
     values = [value for value in range(1, 20, 2)]
     return values
+
 
 def listOfThrees():
     values = [value for value in range(3, 30, 3)]
     return values
 
+
 def cubes():
-    values = [value ** 3 for value in range(1, 11)]
+    values = [value**3 for value in range(1, 11)]
     return values
+
 
 def main():
     favouritePizzas()
@@ -45,4 +49,6 @@ def main():
     print(oddNumbers())
     print(listOfThrees())
     print(cubes())
+
+
 main()
