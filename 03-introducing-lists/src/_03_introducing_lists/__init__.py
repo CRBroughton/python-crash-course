@@ -10,7 +10,7 @@ def printNames(names: List[str]):
 
 def greetings(names: List[str]):
     for name in names:
-        print(f"Hello", name)
+        print(f"Hello {name}")
 
 
 motorCycles = ["honda", "yamaha", "suzuki"]
