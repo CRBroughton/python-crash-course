@@ -4,10 +4,26 @@ def favouritePizzas():
         print(f"I like {pizza} pizza")
 
 
-def animalsAsPets():
-    animals = ["Dog", "Cat", "Pig"]
+animals = ["Dog", "Cat", "Pig", "Bird", "Horse"]
+def animalsAsPets(animals: list[str]):
     for animal in animals:
         print(f"A {animal} would make a great pet")
+
+
+def getFirstThreeAnimals(animals: list[str]):
+    print("The first three items in the list are:")
+    for animal in animals[:3]:
+        print(animal)
+
+def getThreeAnimalsMiddle(animals: list[str]):
+    print("The middle animals are:")
+    for animal in animals[1:4]:
+        print(animal)
+
+def getLastThreeAnimals(animals: list[str]):
+    print("The last three animals are:")
+    for animal in animals[-3:]:
+        print(animal)
 
 
 def toTwenty():
@@ -42,7 +58,7 @@ def cubes():
 
 def main():
     favouritePizzas()
-    animalsAsPets()
+    animalsAsPets(animals)
     toTwenty()
     toOneMillion()
     print(sumOneMillion())
@@ -50,5 +66,7 @@ def main():
     print(listOfThrees())
     print(cubes())
 
-
+    getFirstThreeAnimals(animals)
+    getThreeAnimalsMiddle(animals)
+    getLastThreeAnimals(animals)
 main()
