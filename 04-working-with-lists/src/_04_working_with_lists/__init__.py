@@ -55,6 +55,10 @@ def cubes():
     values = [value**3 for value in range(1, 11)]
     return values
 
+foodTuple = ("Pizza", "Burger", "Fish n Chips", "Haddock", "Sausage")
+def printAvailableFood():
+    for food in foodTuple:
+        print(food)
 
 def main():
     favouritePizzas()
@@ -69,4 +73,6 @@ def main():
     getFirstThreeAnimals(animals)
     getThreeAnimalsMiddle(animals)
     getLastThreeAnimals(animals)
+
+    printAvailableFood()
 main()
